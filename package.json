@@ -1,0 +1,39 @@
+{
+    "name": "portfolio",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node ./server.js"
+    },
+    "engines": {
+        "node": "^12.18.3",
+        "npm": "^6.0.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.2",
+        "bcrypt": "^5.0.1",
+        "bootstrap": "^4.6.0",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "ejs": "~2.6.1",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "jquery": "^3.5.1",
+        "mongoose": "^5.11.18",
+        "morgan": "~1.9.1",
+        "passport": "^0.4.1",
+        "popper.js": "^1.16.1"
+    },
+    "description": "portfolio assignment",
+    "main": "./routes/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shaheenkaipally/webdevportfolio.git"
+    },
+    "author": "mohamed kaipally",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shaheenkaipally/webdevportfolio/issues"
+    },
+    "homepage": "https://github.com/shaheenkaipally/webdevportfolio#readme"
+}

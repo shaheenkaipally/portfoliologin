@@ -1,0 +1,60 @@
+<%- include partials/header.ejs %>
+
+    <%- include partials/main_nav.ejs %>
+
+        <main class="jumbotron">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-5">
+                    <h1>
+                        <%= title %>
+                    </h1>
+                    <br>
+                    <table class="table table-bordered table-striped table-hover">
+                        <tr>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Username</th>
+                            <th class="text-center">Password</th>
+                            <th class="text-center">Email</th>
+                            <th class="text-center">Number</th>
+                            <th class="text-center">Update</th>
+                            <th class="text-center">Delete</th>
+                        </tr>
+
+                        <% for (let count = 0; count<UserList.length; count++) { %>
+                            <tr>
+                                <td class="text-center">
+                                    <%= UserList[count].name %>
+                                </td>
+                                <td class="text-center">
+                                    <%= UserList[count].username %>
+                                </td>
+                                <td class="text-center">
+                                    <%= UserList[count].password %>
+                                </td>
+                                <td class="text-center">
+                                    <%= UserList[count].email %>
+                                </td>
+                                <td class="text-center">
+                                    <%= UserList[count].number %>
+                                </td>
+                                <td class="text-center">
+                                    <a href="/user-list/update/<%= UserList[count]._id %>" class="btn btn-primary">
+                                        <i class="fas fa-pencil-alt"></i>Update</a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="/user-list/delete/<%= UserList[count]._id %>" class="btn btn-danger">
+                                        <i class="fas fa-trash alt"></i>Delete</a>
+                                </td>
+                            </tr>
+                            <%}%>
+
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <%- include partials/bottom_nav.ejs %>
+
+            <%- include partials/footer.ejs %>
