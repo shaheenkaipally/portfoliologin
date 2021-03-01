@@ -1,3 +1,9 @@
+/*
+    about page file
+	Mohamed Shaheen Kaipally
+	Student #: 301158774
+    Date: 28-feb-2021
+*/
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');

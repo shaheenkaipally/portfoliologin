@@ -1,3 +1,11 @@
+//file contains all the routs
+/*
+    index route file
+	Mohamed Shaheen Kaipally
+	Student #: 301158774
+    Date: 28-feb-2021
+*/
+
 let express = require('express');
 let router = express.Router();
 
