@@ -6,6 +6,7 @@ let logger = require('morgan');
 // database setup
 let mongoose = require('mongoose');
 let DB = require('./config/db');
+const MongoClient = require('mongodb').MongoClient;
 
 mongoose.connect(DB.URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
